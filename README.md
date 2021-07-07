@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="DragonBallProject" title="#DragonBallProject" src="./modelo-projeto/Login.png" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center"> 
+	🐉 Dragon Ball Z Project🐉
+</h4>
 
-## Available Scripts
+## 💻 Sobre o projeto
 
-In the project directory, you can run:
+♻️ Dragon Ball Z Project - Faz parte de um projeto de desafios semanais proposto por 
+[iuricode](https://github.com/iuricode "https://github.com/iuricode") e este foi o primeiro! <br> O primeiro e os demais desafios estão nesse repositório do figma: [Codelândia - Desafios – Figma](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Codel%C3%A2ndia---Desafios?node-id=0%3A1)
 
-### `yarn start`
+## 🎨 Meu Layout
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O layout da aplicação está disponível no Figma:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<a href="https://www.figma.com/file/trHEP8flFxuLmbvCjeiM3j/Codel%C3%A2ndia-Eros?node-id=0%3A1">
+  <img alt="Made by tgmarinho" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
+</a>
 
-### `yarn test`
+### 🎨 StyleGuide
+  <img alt="DragonBallProject" title="#DragonBallProject" src="./modelo-projeto/Style Guide.png" width="100%" style="border-radius: 05px; margin-bottom: 30px;">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### Mobile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <img alt="DragonBallProject" title="#DragonBallProject" src="./modelo-projeto/Aplicação - Mobile/Login - Mobile.png" width="200px" style="border-radius: 05px;">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <img alt="DragonBallProject" title="#DragonBallProject" src="./modelo-projeto/Aplicação - Mobile/Aplicação - Mobile.png" width="200px" style="border-radius: 05px;">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <img alt="DragonBallProject" title="#DragonBallProject" src="./modelo-projeto/Aplicação - Mobile/menu.png" width="200px" style="border-radius: 05px;">
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  <img alt="DragonBallProject" title="#DragonBallProject" src="./modelo-projeto/Aplicação - Mobile/menu-1.png" width="200px" style="border-radius: 05px;">
+  
+</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Web
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p align="center" style="display: flex; flex-direction:column;  align-items: flex-start; justify-content: center;">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  <img alt="DragonBallProject" title="#DragonBallProject" src="./modelo-projeto/Login.png" width="100%" style="border-radius: 05px; margin-bottom: 30px;">
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  <img alt="DragonBallProject" title="#DragonBallProject" src="./modelo-projeto/Aplicação - Desktop.png" width="100%" style="border-radius: 05px;">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+</p>
 
-### Analyzing the Bundle Size
+## 🛠 Tecnologias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🚧 Em construção... 🚧
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🚀 Como executar o projeto
+🚧 Em construção... 🚧
 
-### Advanced Configuration
+### Pré-requisitos
+🚧 Em construção... 🚧
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 🎲 Rodando o Back End (servidor)
+🚧 Em construção... 🚧
 
-### Deployment
+### 🧭 Rodando a aplicação web (Front End)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 📱Rodando a aplicação mobile 
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🚧 Em construção... 🚧
