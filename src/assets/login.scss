@@ -1,0 +1,177 @@
+.container-login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("./images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.form-login{
+    padding: 20px;
+    margin-left: 50px;
+    position: relative;
+    max-width: 400px; 
+    width: 100%;
+    h1{
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    .google{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        height: 50px;
+
+        font-weight: 700;
+        color: #475461;
+        font-size: 1rem;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0px 4.08521px 4.08521px rgba(0, 0, 0, 0.12);
+        img{
+            margin-right: 20px;
+            width: 40px;
+        }
+
+        &:hover{
+            border: 1px solid #000;
+        }
+    }
+    .or{
+        text-align: center;
+        position: relative;
+        color: #475461;
+        margin: 20px 0px;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 40%;
+            height: 0.5px;
+            background-color: #475461;
+            bottom: 50%;
+            left: 20%;
+            transform: translate(-50%);
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 40%;
+            height: 0.5px;
+            background-color: #475461;
+            bottom: 50%;
+            right: -20%;
+            transform: translate(-50%);
+        }
+    }
+
+    .input-logins{
+        position: relative;
+        img{
+            position: absolute;
+            top: 18%;
+            left: 10px;
+            z-index: 100;
+        }
+        .MuiOutlinedInput-root{
+            margin-bottom: 20px;
+        }
+        .MuiFormControl-root{
+            width: 100%;
+            label{
+                padding-left:30px;
+            }
+            .MuiInputLabel-shrink{
+                padding: 0px;
+            }
+        }
+        .MuiInputBase-input:invalid,
+        .MuiInputBase-input:valid{
+            padding-left: 40px;
+            background: #fff;
+            box-shadow: 0px 4.08521px 4.08521px rgba(0, 0, 0, 0.12);
+            border-radius: 5px;
+        }
+    }
+    
+    .create-account{
+        font-size: .7rem;
+        margin-bottom: 20px;
+        color: #fff;
+        top: -15px;
+        position: relative;
+
+        a{
+            color: #FC6F39;
+            cursor: pointer;
+        }
+    }
+
+    .btn-entrar{
+        background: linear-gradient(90deg, #FF895C 0%, #FC6E38 100%);
+        box-shadow: 0px 4.08521px 4.08521px rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 1rem;
+        height: 50px;
+
+        border: none;
+        outline: none;
+
+        position: relative;
+        &:hover{
+            border: 1px solid #000;
+        }
+        img{
+            position: absolute;
+            left: 20px;
+        }
+    }
+}
+.overlay{
+    opacity: 0;
+    transition: .3s;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+@media(max-width:1200px){
+    .container-login{
+        background-position: right;
+        justify-content: center;
+    }
+    .form-login{
+        margin-left: 0px;
+    }
+}
+@media(max-width:1200px){
+    .container-login{
+        background-position: 87%;
+    }
+    .overlay{
+        opacity: 1;
+    }
+    .form-login .or{
+        color: #fff;
+        &::before, &::after{
+            background-color: #fff;
+        }
+    }
+}
