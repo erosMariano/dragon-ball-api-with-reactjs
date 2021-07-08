@@ -92,6 +92,10 @@
             }
             .MuiInputLabel-shrink{
                 padding: 0px;
+            
+            }
+            .MuiInputLabel-outlined.MuiInputLabel-shrink{
+                transform: translate(14px, 0px) scale(0.75);
             }
         }
         .MuiInputBase-input:invalid,

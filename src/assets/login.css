@@ -118,6 +118,11 @@
   padding: 0px;
 }
 
+.form-login .input-logins .MuiFormControl-root .MuiInputLabel-outlined.MuiInputLabel-shrink {
+  -webkit-transform: translate(14px, 0px) scale(0.75);
+          transform: translate(14px, 0px) scale(0.75);
+}
+
 .form-login .input-logins .MuiInputBase-input:invalid,
 .form-login .input-logins .MuiInputBase-input:valid {
   padding-left: 40px;
