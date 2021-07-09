@@ -10,7 +10,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0;
 
     background: url("./images/dragon.png");
     background-size: cover;
@@ -25,6 +24,7 @@ header{
         width: 80%;
         border-radius: 10px;
         padding: 20px;
+        margin-top: 40px;
         border: 1px solid #4E4E4E;
         p{
             margin-left: 20px;
@@ -84,6 +84,7 @@ header{
         transition: .2s;
 
         position: relative;
+        bottom: 80px;
         &:hover{
             border: 1px solid #000;
         }
@@ -101,6 +102,14 @@ header{
     height: 100vh;
     width: 100%;
     background: rgba(255,255,255,.3);
+}
+.MuiPaper-root{
+    *:not(p){
+        overflow-y: hidden;
+    }
+}
+.MuiPaper-root header{
+    width: 100%;    
 }
 
 @media(max-width:1117px){

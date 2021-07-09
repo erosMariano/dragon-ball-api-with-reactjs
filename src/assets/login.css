@@ -215,18 +215,4 @@
     background-color: #fff;
   }
 }
-
-.MuiPaper-root header {
-  width: 100%;
-  padding: 0;
-}
-
-.MuiPaper-root header .avatar {
-  margin-top: 40px;
-}
-
-.MuiPaper-root header .btn-entrar {
-  position: relative;
-  bottom: 40px;
-}
 /*# sourceMappingURL=login.css.map */
