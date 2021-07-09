@@ -21,16 +21,16 @@ import "../assets/login.css"
 
     }
     return (
-        <div class="container-login">
+        <div className="container-login">
             <div className="overlay"></div>
             <FormControl class="form-login">
                 <h1>Vamos Começar?</h1>
-                <Button class="google" variant="contained" onClick={navigateToNewRoom}>
+                <Button className="google" variant="contained" onClick={navigateToNewRoom}>
                     <img src="/images/icons/google.svg" />
                     Entrar com o google
                 </Button>
 
-                <p class="or"> OU </p>
+                <p className="or"> OU </p>
                 
                 
                 <div className="input-logins">
@@ -45,7 +45,7 @@ import "../assets/login.css"
 
                 <p className="create-account">Ainda não possui uma conta? <a href="#">Clique aqui</a></p>
 
-                <button  class="btn-entrar" variant="contained">
+                <button  className="btn-entrar" variant="contained">
                     <img src="/images/icons/log-in.svg"/>
                     Entrar
                 </button>

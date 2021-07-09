@@ -1,0 +1,145 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+  background: url("./images/dragon.png");
+  background-size: cover;
+  position: relative;
+}
+
+header .avatar {
+  color: #4E4E4E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 80%;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #4E4E4E;
+}
+
+header .avatar p {
+  margin-left: 20px;
+  position: relative;
+}
+
+header .avatar p::before {
+  content: "!";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #C4C4C4;
+  color: #fff;
+  height: 15px;
+  width: 15px;
+  font-size: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+}
+
+header .create-account {
+  font-size: .7rem;
+  margin-bottom: 20px;
+  color: #fff;
+  top: -15px;
+  position: relative;
+}
+
+header .create-account a {
+  color: #FC6F39;
+  cursor: pointer;
+}
+
+header .btn-entrar {
+  background: -webkit-gradient(linear, left top, right top, from(#FF895C), to(#FC6E38));
+  background: linear-gradient(90deg, #FF895C 0%, #FC6E38 100%);
+  -webkit-box-shadow: 0px 4.08521px 4.08521px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4.08521px 4.08521px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  height: 50px;
+  border: 1px solid #FC6E38;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+  position: relative;
+}
+
+header .btn-entrar:hover {
+  border: 1px solid #000;
+}
+
+header .btn-entrar img {
+  position: absolute;
+  left: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.over {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1117px) {
+  .avatar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .avatar p {
+    font-size: 1rem;
+  }
+  .avatar p::before {
+    content: "";
+  }
+}
+/*# sourceMappingURL=leftBarApp.css.map */

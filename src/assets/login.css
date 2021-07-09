@@ -215,4 +215,8 @@
     background-color: #fff;
   }
 }
+
+.MuiPaper-root header {
+  width: 100%;
+}
 /*# sourceMappingURL=login.css.map */
