@@ -1,0 +1,56 @@
+.rightBar {
+  width: 100%;
+  padding: 30px;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.rightBar::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.rightBar::-webkit-scrollbar {
+  width: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.rightBar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.rightBar .imagem-maior {
+  text-align: center;
+  color: #475461;
+  padding-bottom: 30px;
+  border-bottom: 0.93556px solid rgba(179, 178, 178, 0.5);
+}
+
+.rightBar .imagem-maior .imagem-container {
+  background: #fff;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3.74226px 3.74226px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3.74226px 3.74226px rgba(0, 0, 0, 0.12);
+}
+
+.rightBar h3 {
+  padding-top: 30px;
+}
+
+.rightBar p {
+  font-size: .9rem;
+  color: #8A8A8A;
+}
+
+.rightBar img {
+  width: 100%;
+}
+
+.barRight {
+  width: 20%;
+}
+/*# sourceMappingURL=rightBar.css.map */

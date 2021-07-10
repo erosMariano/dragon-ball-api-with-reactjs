@@ -73,16 +73,6 @@ function LeftBar() {
         })
 
 
-
-
-
-
-
-
-
-
-
-
     return (
         <div>
 

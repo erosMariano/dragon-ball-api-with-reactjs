@@ -7,6 +7,7 @@ import "../assets/main.css";
 function Main() {
     const [allData, setAllData] = useState([])
     const [filteredData, setFilteredData] = useState(allData);
+    
 
     const handleSearch = (event) => {
         let value = event.target.value.toLowerCase();
@@ -21,13 +22,11 @@ function Main() {
     
     useEffect(() =>{
         setAllData(myJson)
-        console.log(myJson)
-
         setFilteredData(myJson)
     }, [])
 
 
-
+    
 
     return ( 
         <div className="main">
@@ -37,7 +36,7 @@ function Main() {
 
             <div className="input">
                 <label><img src="/images/icons/Search.svg"/></label>
-                <input type="text" placeholder="Digite o nome do personagem" onChange={(event) =>handleSearch(event)} />
+                <input type="text" placeholder="Digite o nome do personagem" onChange={(event) =>handleSearch(event) } />
             </div>
             
             <div className="nomes">
@@ -79,6 +78,9 @@ function Main() {
                 })}
             </div>
         </div>
+        
+
+
         
     )
 }

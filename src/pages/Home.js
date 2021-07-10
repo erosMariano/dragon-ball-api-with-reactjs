@@ -6,6 +6,7 @@ import RightBar from '../components/RightBar';
 
 import LeftBarApp from "../components/LeftBarApp"
 import Main from '../components/Main';
+import RightBarApp from '../components/RightBarApp';
 
 
 function Home() {
@@ -14,9 +15,7 @@ function Home() {
             <div className="container_home">
                 <LeftBar/>
                 <Main />
-                {/* <RightBar/> */}
-                <LeftBar/>
-
+                <RightBar/>
             </div>
     )
 }

@@ -9,5 +9,5 @@
   display: flex; 
 }
 body{
-  overflow: hidden;
+  overflow-y: hidden;
 }

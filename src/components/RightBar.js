@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
-import Header from '../components/Header';
-import FooterLateral from '../components/FooterLateral';
-
+import RightBarApp from './RightBarApp';
 
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
@@ -49,7 +47,7 @@ function RightBar() {
                 onClick={toggleDrawer(anchor, false)}
                 onKeyDown={toggleDrawer(anchor, false)}
             >
-                {<FooterLateral/>}
+                {<RightBarApp/>}
             </div>
         );
     
@@ -71,7 +69,7 @@ function RightBar() {
 
 
     return (
-        <div>
+        <div className="barRight">
 
         {sizeOfThings() <= 700 ? 
             <>
@@ -88,7 +86,7 @@ function RightBar() {
                         </SwipeableDrawer>
                     </React.Fragment>
             ))} 
-            </> : null}
+            </> : <RightBarApp/>}
 
                 
         </div>

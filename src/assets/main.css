@@ -165,6 +165,7 @@
   background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 
 .main .box:hover {
