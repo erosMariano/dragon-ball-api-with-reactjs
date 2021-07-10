@@ -5,3 +5,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.container_home{
+  display: flex; 
+}
+body{
+  overflow: hidden;
+}

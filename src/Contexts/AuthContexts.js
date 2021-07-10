@@ -9,7 +9,6 @@ export function AuthContextProvider(props){
 
     useEffect(() =>{
       const unsubscribe = auth.onAuthStateChanged(user =>{
-        if(user){
           if(user){
             const {displayName, photoURL, uid} = user;
     
@@ -23,7 +22,6 @@ export function AuthContextProvider(props){
               avatar: photoURL
             })
           }
-        }
       })
   
       return () =>{
@@ -36,6 +34,7 @@ export function AuthContextProvider(props){
       const provider =  new firebase.auth.GoogleAuthProvider();
   
       const result = await auth.signInWithPopup(provider)
+      console.log(result)
         if(result.user){
           const {displayName, photoURL, uid} = result.user;
   
