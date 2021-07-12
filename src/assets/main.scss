@@ -1,8 +1,4 @@
-.main-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .main{
     position: relative;
     display: flex;
@@ -13,7 +9,6 @@
     flex-direction: row;
     overflow-x: hidden;
     height: 100vh;
-
     &::-webkit-scrollbar-track {
         background-color: #fff;
       }
@@ -38,7 +33,6 @@
         width: 100%;
         display: flex;
         height: -webkit-fill-available;
-        overflow-y: scroll;
         overflow-x: hidden;
 
 
@@ -54,6 +48,24 @@
             border-radius: 10px;
           }
     }   
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+          }
+          &::-webkit-scrollbar {
+            width: 0px;
+            background-color: transparent;
+          }
+          &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            border-radius: 10px;
+          }
+    }
     .cards{
         display:flex;
         align-items:center;

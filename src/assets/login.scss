@@ -11,10 +11,11 @@
 
 .form-login{
     padding: 20px;
-    margin-left: 50px !important;
+    margin-left: 50px;
     position: relative;
     max-width: 400px; 
     width: 100%;
+    left: 50px;
 
     h1{
         color: #fff;
@@ -163,7 +164,7 @@
         justify-content: center;
     }
     .form-login{
-        margin-left: 0px;
+        left: 0px;
     }
 }
 @media(max-width:1200px){

@@ -5,20 +5,7 @@
   height: 100vh;
   overflow-x: hidden;
   background: #fff;
-}
-
-.rightBar::-webkit-scrollbar-track {
-  background-color: #fff;
-}
-
-.rightBar::-webkit-scrollbar {
-  width: 10px;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.rightBar::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  overflow-y: scroll !important;
 }
 
 .rightBar .imagem-maior {
