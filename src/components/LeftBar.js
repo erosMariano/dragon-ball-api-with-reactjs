@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import Header from './Header';
 import LeftBarApp from './LeftBarApp';
 
+import MenuIcon from '@material-ui/icons/Menu';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
@@ -74,13 +74,17 @@ function LeftBar() {
 
 
     return (
-        <div>
+        <div className="leftBarMobile">
 
         {sizeOfThings() <= 700 ? 
             <>
             {['left'].map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+                    <Button onClick={toggleDrawer(anchor, true)} className="btn-left">
+                        <MenuIcon/>
+                    </Button>
+
+
                     <SwipeableDrawer
                     anchor={anchor}
                     open={state[anchor]}

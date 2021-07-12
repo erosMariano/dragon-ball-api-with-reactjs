@@ -1,0 +1,49 @@
+@media(max-width:1000px){
+    .main .box{
+        height: auto;
+    }
+    .box > div{
+        flex-direction: column;
+    }
+    .cards{
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:700px){
+    .leftBarMobile,
+    .barRight{
+        position: fixed;
+        z-index: 1;
+    }
+    .btn-left{
+        position: fixed;
+        top: 10px;
+        left: 10px;
+
+        svg{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    .barRight{
+        right: 20px;
+        top: 10px;
+        position: fixed;
+        width: auto;
+    }
+
+    .main .box .description {
+         margin-left: 0px;
+    }
+
+    .main .input label{
+        left: 8%;
+    }
+    .main .box {
+        height: auto;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+}

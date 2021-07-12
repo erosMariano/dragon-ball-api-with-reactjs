@@ -1,4 +1,8 @@
-
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .main{
     position: relative;
     display: flex;
@@ -6,9 +10,22 @@
     flex: 1;
     justify-content: unset;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     overflow-x: hidden;
-    
+    height: 100vh;
+
+    &::-webkit-scrollbar-track {
+        background-color: #fff;
+      }
+      &::-webkit-scrollbar {
+        width: 10px;
+        background: rgba(0,0,0,.1);
+      }
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,.1);
+        border-radius: 10px;
+      }
+       
     .container_imagem_logo{
        text-align: center;
        display: flex;
@@ -20,7 +37,12 @@
     >div{ 
         width: 100%;
         display: flex;
+        height: -webkit-fill-available;
     }   
+    .cards{
+        display:flex;
+        align-items:center;
+    }
     .input{
         position: relative;
         width: 80%;

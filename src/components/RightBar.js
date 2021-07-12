@@ -8,7 +8,9 @@ import Button from '@material-ui/core/Button';
   
   
 
-function RightBar() {
+function RightBar({ filtro }) {
+    
+    
     const useStyles = makeStyles({
         list: {
           width: 250,
@@ -32,7 +34,7 @@ function RightBar() {
         if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return;
         }
-    
+     
         setState({ ...state, [anchor]: open });
         };
     
@@ -47,7 +49,7 @@ function RightBar() {
                 onClick={toggleDrawer(anchor, false)}
                 onKeyDown={toggleDrawer(anchor, false)}
             >
-                {<RightBarApp/>}
+                {<RightBarApp filtroApp = {filtro} />}
             </div>
         );
     
@@ -75,7 +77,7 @@ function RightBar() {
             <>
         {['right'].map((anchor) => (
                     <React.Fragment key={anchor}>
-                        <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+                        <Button onClick={toggleDrawer(anchor, true)}>Ver personagem</Button>
                         <SwipeableDrawer
                         anchor={anchor}
                         open={state[anchor]}
@@ -86,7 +88,7 @@ function RightBar() {
                         </SwipeableDrawer>
                     </React.Fragment>
             ))} 
-            </> : <RightBarApp/>}
+            </> : <RightBarApp filtroApp={filtro}/>}
 
                 
         </div>

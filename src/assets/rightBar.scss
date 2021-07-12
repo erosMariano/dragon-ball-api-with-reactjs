@@ -3,7 +3,7 @@
     padding: 30px;
     overflow-y: scroll;
     height: 100vh;
-
+    overflow-x: hidden;
     &::-webkit-scrollbar-track {
         background-color: #fff;
       }
@@ -45,5 +45,9 @@
 }
 
 .barRight{
-    width: 20%;
+    width: 20% !important;
+    button{
+        height: 100px;
+        background-color: rgba(255,255,255,.5);
+    }
 }

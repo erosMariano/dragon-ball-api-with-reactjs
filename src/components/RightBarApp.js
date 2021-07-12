@@ -1,40 +1,41 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import "../assets/rightBar.css"
 import myJson from '../data/products';
 
 
+function RightBarApp({ filtroApp }) {
 
-function RightBarApp() {
 
+    function teste(){
+        let testeApp;
+        let testeApp2 = []
 
-    const [allData, setAllData] = useState([])
-    const [filteredData, setFilteredData] = useState(allData);
+        if(filtroApp === undefined){
+            testeApp2 = [myJson[5]]
+            testeApp = testeApp2
+        }else{
 
-    const handleSearch = (event) => {
-        let value = event.target.value.toLowerCase();
-        let result = [];
-
-        result = allData.filter((data) => {
-            return data.id.search(value) != -1;
-        });
-
-            setFilteredData(result);
+            if(filtroApp.length <=0){
+                testeApp = [myJson[5]]
+                return testeApp
+            }
+            testeApp = filtroApp
+            if(filtroApp === undefined){
+                filtroApp = [myJson[5]]
+            }
         }
-
-    useEffect(() =>{
-        setAllData(myJson)
-        setFilteredData(myJson)
-    }, [])
-
+        return testeApp
+    }
+    
+    const personagem = teste();
+    
     return (
         <div>
-            {filteredData.map((value,index) =>{
-                return(
-                    <div class="rightBar">
+            <div className="rightBar">
                         <div className="imagem-maior">
-                        <div className="imagem-container" style={{backgroundImage: `url(${ value.img || myJson[0].img})`}}></div>
+                        <div className="imagem-container"  style={{backgroundImage: `url(${ personagem[0].img || myJson[0].img})`}}></div>
 
-                        <h2>{value.name || "Goku"}</h2>
+                        <h2>{personagem[0].name || "Goku"}</h2>
                         </div>
 
 
@@ -43,7 +44,7 @@ function RightBarApp() {
                         <h3>Sobre</h3>
                         <p>
                             {
-                                value.bio || 
+                                personagem[0].bio || 
                                 "Goku, nascido Kakarot, é um Saiyan masculino e o principal protagonista da série Dragon Ball. Goku é um Saiyan originalmente enviado à Terra como uma criança com a missão de destruir seu povo. No entanto, um acidente altera sua memória, permitindo-lhe crescer e se tornar o maior defensor da Terra e o líder informal da Equipe Dragão. Ele constantemente se esforça e treina pa           ra ser o maior guerreiro possível, o que manteve a Terra e o universo a salvo da destruição muitas vezes."
                             }
                         </p>
@@ -52,14 +53,12 @@ function RightBarApp() {
 
                             <ul>
                                 {
-                                    value.abilities ||
+                                    personagem[0].abilities ||
                                     "Ataque: 50.000 <br> Defesa: 50.000 <br> Velocidade de restauração KI: 50.000"
                                 }
                             </ul>
                         </div>
                     </div>
-                )
-            })}
         </div>
 
     )

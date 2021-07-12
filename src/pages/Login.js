@@ -5,11 +5,11 @@ import { AuthContext } from '../Contexts/AuthContexts';
 import TextField from '@material-ui/core/TextField';
 import { FormControl, Button } from '@material-ui/core';
 
+
 import "../assets/login.css"
 
-
-
  function Login() {
+
     const history = useHistory();
     const {user, signWithGoogle} = useContext(AuthContext)
 
@@ -23,7 +23,7 @@ import "../assets/login.css"
     return (
         <div className="container-login">
             <div className="overlay"></div>
-            <FormControl class="form-login">
+            <FormControl className="form-login">
                 <h1>Vamos Começar?</h1>
                 <Button className="google" variant="contained" onClick={navigateToNewRoom}>
                     <img src="/images/icons/google.svg" />

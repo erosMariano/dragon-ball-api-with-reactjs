@@ -8,6 +8,3 @@
 .container_home{
   display: flex; 
 }
-body{
-  overflow-y: hidden;
-}
