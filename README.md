@@ -52,20 +52,38 @@ O layout da aplicação está disponível no Figma:
 
 ## 🛠 Tecnologias
 
-🚧 Em construção... 🚧
+- [React Js](https://reactjs.org/)
+
+- [material-ui](https://material-ui.com/)
+
+- [Firebase](https://firebase.google.com/?hl=pt)
+
+- [Sass](https://sass-lang.com/)
+
 
 
 ## 🚀 Como executar o projeto
 🚧 Em construção... 🚧
 
 ### Pré-requisitos
-🚧 Em construção... 🚧
-
-### 🎲 Rodando o Back End (servidor)
-🚧 Em construção... 🚧
+[Git](https://git-scm.com), [Node.js][nodejs]. 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode][vscode]
 
 ### 🧭 Rodando a aplicação web (Front End)
 
-### 📱Rodando a aplicação mobile 
+```bash
+# Clone este repositório
+$ git clone https://github.com/erosMariano/dragon-ball-api-with-reactjs.git
 
-🚧 Em construção... 🚧
+# Instale as dependências por meio do terminal
+$ npm install
+
+# Criar um arquivo .env.local e criar as variaveis locais que irão vir das configurações do firebase
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+```
+Feito com ❤️ por Eros Mariano 👋🐉✨
+
