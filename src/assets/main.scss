@@ -38,6 +38,21 @@
         width: 100%;
         display: flex;
         height: -webkit-fill-available;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+
+        &::-webkit-scrollbar-track {
+            background-color: #fff;
+          }
+          &::-webkit-scrollbar {
+            width: 10px;
+            background: rgba(0,0,0,.1);
+          }
+          &::-webkit-scrollbar-thumb {
+            background: rgba(0,0,0,.1);
+            border-radius: 10px;
+          }
     }   
     .cards{
         display:flex;

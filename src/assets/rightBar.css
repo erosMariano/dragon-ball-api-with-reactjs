@@ -4,6 +4,7 @@
   overflow-y: scroll;
   height: 100vh;
   overflow-x: hidden;
+  background: #fff;
 }
 
 .rightBar::-webkit-scrollbar-track {
